@@ -117,8 +117,8 @@ def main():
 
     count = CharsetConverter({
         'ignore_files' : ['Makefile', 'Makefile.in', 'CMakeLists.txt'],
-        'process_exts' : ['.hpp', '.cpp', '.h', '.c']
-    }).convertDirectory('../../src', 'UTF-8-SIG')
+        'process_exts' : ['.hpp', '.cpp', '.h', '.c', '.txt']
+    }).convertDirectory('../../npc', 'UTF-8-SIG')
 
     if count <= 0:
         Message.ShowInfo('很好! 源代码文件都已转换为 UTF-8-SIG 编码.')

@@ -104,7 +104,8 @@ enum e_pandas_language getSystemLanguage() {
 	default: return PANDAS_LANGUAGE_ENG;
 	}
 #else
-	setlocale(LC_ALL, "");
+	//setlocale(LC_ALL, "");
+	setlocale(LC_CTYPE, "zh_CN.UTF-8");
 	std::string szLocale = setlocale(LC_CTYPE, NULL);
 
 	if (util::istarts_with(szLocale, std::string("zh_CN")))
@@ -808,10 +809,10 @@ enum e_file_charsetmode get_charsetmode(unsigned char* buf, size_t len) {
 //************************************
 enum e_file_charsetmode fmode(FILE* _Stream) {
 	// 优先从缓存中读取
-	enum e_file_charsetmode cached_charsetmode = getModeMapping(_Stream);
-	if (cached_charsetmode != FILE_CHARSETMODE_UNKNOW) {
-		return cached_charsetmode;
-	}
+	//enum e_file_charsetmode cached_charsetmode = getModeMapping(_Stream);
+	//if (cached_charsetmode != FILE_CHARSETMODE_UNKNOW) {
+	//	return cached_charsetmode;
+	//}
 
 	// 若传递的 FILE 指针无效则直接返回编码不可知
 	if (_Stream == nullptr) {
