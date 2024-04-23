@@ -1,5 +1,5 @@
 //===== rAthena Script ======================================= 
-//= Quest NPCs related to Kunlun
+//= Quest NPCs related to Gonryun
 //===== By: ==================================================
 //= KarLaeda
 //===== Current Version: ===================================== 
@@ -2075,7 +2075,7 @@ gon_in,18,27,5	script	Madam#gnbs	771,{
 		mes "Hello, darling~";
 		close;
 	}
-	if (Sex == SEX_FEMALE) {
+	if (Sex == 0) {
 		mes "[Shang Hua Yen]";
 		mes "Hoho~ he's upstairs.";
 		mes "My, are you such a pretty lady~";
@@ -2559,7 +2559,7 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 					mes "Soon after, she started to suffer";
 					mes "from a serious illness. I've met";
 					mes "doctors from all around";
-					mes "Midgard...";
+					mes "Rune-Midgard...";
 					next;
 					mes "[Aumgarl]";
 					mes "But not one of them could";
@@ -2922,7 +2922,7 @@ geffen_in,71,112,2	script	Blacksmith#SaYumMoon	731,{
 				mes "5 Live Coals^000000";
 				next;
 				mes "[Aumgarl]";
-				mes "It's quite a lot, huh?";
+				mes "It's quite alot, huh?";
 				mes "These are necessary supplies.";
 				mes "We need them to repair the sword.";
 				mes "I'll go find some other materials.";
@@ -3029,7 +3029,7 @@ geffen_in,106,106,7	script	Girl#gnbs2	716,{
 	else if (b_sword == 24 || b_sword == 25 || b_sword == 26) {
 		mes "[Lyroo]";
 		mes "Ahh...ahh....";
-		if (Sex == SEX_FEMALE)
+		if (Sex == 0)
 			mes "It's ..you.. pretty...sister..";
 		else
 			mes "It's ..you.. handsome...brother..";
@@ -3077,7 +3077,7 @@ geffen_in,106,106,7	script	Girl#gnbs2	716,{
 	else if (b_sword == 27) {
 		mes "[Lyroo]";
 		mes "uh...umm?";
-		if (Sex == SEX_FEMALE)
+		if (Sex == 0)
 			mes "Ah....It's you, pretty sister...";
 		else
 			mes "Ah....It's you, handsome brother...";
@@ -3107,7 +3107,7 @@ geffen_in,106,106,7	script	Girl#gnbs2	716,{
 	}
 	mes "[Lyroo]";
 	mes "Heehehe...";
-	if (Sex == SEX_FEMALE)
+	if (Sex == 0)
 		mes "Thank you my pretty sister.";
 	else 
 		mes "Thank you handsome brother~";
@@ -3676,7 +3676,7 @@ yuno_in01,99,101,4	script	Doctor#gnbs	744,{
 }
 
 yuno_in01,104,94,0	script	go away#gnbs	139,2,1,{
-OnTouch_:
+OnTouch:
 	if (b_sword < 22) {
 		mes "[??????]";
 		mes "^FF0000What are you doing here?";
@@ -3713,7 +3713,6 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 		next;
 		if (BaseLevel >= 20) {
 			set nakha,1;
-			setquest 10034;
 			mes "[Han Ran Jiao]";
 			mes "I need to go down to get it";
 			mes "but...the monsters...";
@@ -3760,7 +3759,6 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 		next;
 		if (select("Return the knife.:Refuse.") == 1) {
 			set nakha,3;
-			completequest 10035;
 			delitem 1201,1; //Knife
 			mes "[Han Ran Jiao]";
 			mes "Thank you! Thank you so much!";
@@ -3802,10 +3800,9 @@ gonryun,237,226,3	script	Han Ran Jiao#gon	776,{
 }
 
 gon_fild01,245,257,0	script	#gonknife	111,3,3,{
-OnTouch_:
+OnTouch:
 	if (nakha == 1) {
 		set nakha,2;
-		changequest 10034,10035;
 		mes "^3355FFHm? What's this?";
 		mes " ";
 		mes "Something was hidden beneath the leaves...^000000";

@@ -110,7 +110,7 @@ izlude_in,74,172,4	script	Swordman#swd_1	119,{
 			mes "So you wish to become a proud Swordman? By all means, please sign up!";
 			next;
 			if (select("Sign up.:Cancel.") == 1) {
-				savepoint "izlude_in",65,165,1,1;
+				savepoint "izlude_in",65,165;
 				set job_sword_q,1;
 				setquest 1014;
 				mes "[Swordman]";
@@ -127,7 +127,7 @@ izlude_in,74,172,4	script	Swordman#swd_1	119,{
 				}
 				else {
 					mes "[Swordman]";
-					mes "Alright then. Feel free to come back whenever you are ready. All you have to do now is meet our requirements. Good luck to you.";
+					mes "Alright then. Feel free to come back whenever you are ready. All you ahve to do now is meet our requirements. Good luck to you.";
 					close;
 				}
 			}
@@ -229,7 +229,7 @@ izlude_in,62,170,6	script	Swordman#swd_2	85,{
 		close;
 	}
 	else {
-		savepoint "izlude_in",65,165,1,1;
+		savepoint "izlude_in",65,165;
 		warp "izlude_in",39,170;
 		end;
 	}
@@ -315,7 +315,7 @@ job_sword1,223,167,2	script	Mae#swd_1_success	92,{
 	set job_sword_q,4;
 	mes "[Mae]";
 	mes "I sencerely congratulate you for passing the test!";
-	mes "I already sent your test result to the Job Department. Please inquire at the Officer in Centre.Thank you.";
+	mes "I already sent your test result to the Job Department.Please inquire at the Officer in Centre.Thank you.";
 	close2;
 	warp "izlude_in",66,173;
 	end;
@@ -326,7 +326,7 @@ job_sword1,223,167,2	script	Mae#swd_1_success	92,{
 function	script	F_JobSwdMedic	{
 	percentheal 100,0;
 	mes "[Medic]";
-	mes "This is the "+getarg(0)+" check point! Cheer up!";
+	mes "This is the "+getarg(0)+" check point!Cheer up!";
 	close;
 }
 
@@ -460,7 +460,7 @@ job_sword1,180,238,0	duplicate(SwdTrap1)	1_blank_14_a	-1,0,1
 job_sword1,183,238,0	duplicate(SwdTrap1)	1_blank_14_b	-1,0,1
 job_sword1,181,239,0	duplicate(SwdTrap1)	1_blank_14_c	-1,1,0
 
-//job_sword1,193,245,0	warp	1_rest	1,3,job_sword1,215,244
+job_sword1,193,245,0	warp	1_rest	1,3,job_sword1,215,244
 
 // Pitfalls (Set 2)
 //============================================================ 
@@ -622,21 +622,21 @@ job_sword1,181,163,0	duplicate(SwdTrap3)	3_blank_30_c	-1,2,0
 
 // Monsters (all three courses)
 //============================================================ 
-job_sword1,0,0	monster	Chonchon	1183,20
-job_sword1,35,79	monster	Fabre	1184,3,60000,30000
-job_sword1,50,108	monster	Fabre	1184,3,60000,30000
-job_sword1,61,28	monster	Fabre	1184,3,60000,30000
-job_sword1,61,92	monster	Fabre	1184,3,60000,30000
-job_sword1,110,112	monster	Fabre	1184,2,60000,30000
-job_sword1,161,94	monster	Fabre	1184,2,60000,30000
-job_sword1,130,76	monster	Fabre	1184,2,60000,30000
-job_sword1,103,58	monster	Fabre	1184,2,60000,30000
-job_sword1,130,24	monster	Fabre	1184,5,60000,30000
-job_sword1,201,36	monster	Fabre	1184,2,60000,30000
-job_sword1,201,16	monster	Fabre	1184,2,60000,30000
-job_sword1,239,44	monster	Fabre	1184,3,60000,30000
-job_sword1,239,76	monster	Fabre	1184,2,60000,30000
-job_sword1,231,101	monster	Fabre	1184,2,60000,30000
-job_sword1,234,117	monster	Fabre	1184,2,60000,30000
-job_sword1,198,91	monster	Fabre	1184,2,60000,30000
-job_sword1,200,63	monster	Fabre	1184,2,60000,30000
+job_sword1,0,0,0,0	monster	Chonchon	1183,20,5000,0,0
+job_sword1,35,79,0,0	monster	Fabre	1184,3,60000,30000,0
+job_sword1,50,108,0,0	monster	Fabre	1184,3,60000,30000,0
+job_sword1,61,28,0,0	monster	Fabre	1184,3,60000,30000,0
+job_sword1,61,92,0,0	monster	Fabre	1184,3,60000,30000,0
+job_sword1,110,112,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,161,94,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,130,76,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,103,58,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,130,24,0,0	monster	Fabre	1184,5,60000,30000,0
+job_sword1,201,36,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,201,16,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,239,44,0,0	monster	Fabre	1184,3,60000,30000,0
+job_sword1,239,76,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,231,101,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,234,117,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,198,91,0,0	monster	Fabre	1184,2,60000,30000,0
+job_sword1,200,63,0,0	monster	Fabre	1184,2,60000,30000,0

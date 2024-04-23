@@ -154,9 +154,17 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 		mes "Congratulations!";
 		callfunc "Job_Change",Job_Merchant;
 		callfunc "F_ClearJobVar";
-		for ( .@quest_id = 1009; .@quest_id <= 1012; .@quest_id++ ) {
-			if (isbegin_quest(.@quest_id) == 1)
-				completequest .@quest_id;
+		if(checkquest(1009) != -1) {
+			completequest 1009;
+		}
+		else if(checkquest(1010) != -1) {
+			completequest 1010;
+		}
+		else if(checkquest(1011) != -1) {
+			completequest 1011;
+		}
+		else {
+			completequest 1012;
 		}
 		mes "I'm very pleased that you are joining the Merchant Guild and hope that you will play an active part in Rune-Midgarts' economy.";
 		next;
@@ -180,7 +188,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 		mes "But we all know that~";
 		close;
 	}
-	else if (job_merchant_q2 && job_merchant_q > 0 && job_merchant_q < 7) {
+	else if (job_merchant_q <= 6 && job_merchant_q != 0) {
 		mes "[Chief Mahnsoo]";
 		if (job_merchant_q2 == 1 || job_merchant_q2 == 2) {
 			mes "First, get the delivery package from the storehouse, and then take it to the former Swordman's Association in Prontera.";
@@ -210,7 +218,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 			}
 		}
 		else if (job_merchant_q2 == 5 || job_merchant_q2 == 6) {
-			mes "First, get the delivery package from the storehouse, and then take it to Morocc.";
+			mes "First, get the delivery package from the storehouse, and then take it to Morroc.";
 			next;
 			mes "[Chief Mahnsoo]";
 			mes "You'll have to find Java Dullihan, the Dyemaker, so that you can deliver the product he ordered.";
@@ -266,7 +274,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 		mes "Take care!";
 		close;
 	}
-	else {
+	else if (job_merchant_q == 0) {
 		mes "[Chief Mahnsoo]";
 		mes "So, what brings you to";
 		mes "the Merchant Association?";
@@ -394,7 +402,7 @@ alberta_in,53,43,6	script	Merchant#mer	86,{
 				callsub S_GiveSerial,2989396,3,2191737,4,1010;
 				break;
 			case 3:
-				mes "First, get the delivery package from the storehouse, and then go to Morocc. There you must find Java Dullihan, the dyemaker.";
+				mes "First, get the delivery package from the storehouse, and then go to Morroc. There you must find Java Dullihan, the dyemaker.";
 				next;
 				mes "[Chief Mahnsoo]";
 				mes "He's a bit forgetful, so you should probably give the package to one of his students.";
@@ -528,7 +536,7 @@ alberta_in,28,29,2	script	Merchant Guildsman#mer	83,{
 		else if (job_merchant_q2 == 3 || job_merchant_q2 == 4)
 			mes "Geffen Magic Academy. Okay, receipt?";
 		else if (job_merchant_q2 == 5 || job_merchant_q2 == 6)
-			mes "The dyemaker in Morocc. Not bad. Receipt?";
+			mes "The dyemaker in Morroc. Not bad. Receipt?";
 		else if (job_merchant_q2 == 7 || job_merchant_q2 == 8)
 			mes "Oh hohohoho~! The Kafra Babe on Byalan Island?! Awesome! Anyway, did you bring the receipt?";
 
@@ -846,7 +854,7 @@ morocc_in,140,102,4	script	Student#mer	86,{
 	}
 	else {
 		mes "[Dyer's Student]";
-		mes "Mr. Java Dullihan is the one and only, the best dye maker on the Midgard continent.";
+		mes "Mr. Java Dullihan is the one and only, the best dye maker on the Rune-Midgard continent.";
 		next;
 		mes "[Dyer's Student]";
 		mes "Aaaand I'm proud to say that I'm his student! Someday, I'll be able to make really beautiful dyes too!";
@@ -994,7 +1002,7 @@ prontera,248,42,0	script	Kafra Employee#mer	116,{
 			else if (job_merchant_q2 == 2)
 				mes "ordered had the serial number 2328137. I'm sure it's not this.";
 			else
-				mes "ordered had the serial number 2485741 or 2328137.";
+				mes "ordered had the serial number 2328137 or 2328137.";
 			next;
 			mes "[Kafra Employee]";
 			mes "I'm afraid there";

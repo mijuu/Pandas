@@ -15,21 +15,21 @@ OnInit:
 	setarray .blackList[0],0;	//Array of black listed item ID
 
 	if(!.HP_Option && !.SP_Option){
-		debugmes "Warning: @autopot both hp and sp are Disabled";
-		debugmes "Warning: @autopot script has been Disabled!";
+		debugmes "警告：@autopot 自动回复生命值和魔法值都已禁用";
+		debugmes "警告：@autopot 脚本已被禁用！";
 		end;
 	}
 	bindatcmd("autopot",strnpcinfo(0)+"::OnCommand",0,99);
 end;
 
 L_Help:
-	dispbottom "Available commands:";
-	if(.HP_Option && .SP_Option){
-		dispbottom "    @autopot <hp|sp> <item id> {<min hp|sp % [1..100]> {<delay [" + .MinDelay + ".."+.MaxDelay+"]>}}";
+	dispbottom "可用命令：";
+	if (.HP_Option && .SP_Option) {
+		dispbottom "    @autopot <hp|sp> <物品ID> {<最小 hp|sp % [1..100]> {<延迟时间 [" + .MinDelay + ".."+.MaxDelay+"]>}}";
 		dispbottom "    @autopot <hp|sp> list";
 		dispbottom "    @autopot <hp|sp> <on|off>";
-	}else{
-		dispbottom "    @autopot <" + (.HP_Option?"hp":"sp") + "> <item id> {<min " + (.HP_Option?"hp":"sp") + " % [1..100]> {<delay [" + .MinDelay + ".."+.MaxDelay+"]>}}";
+	} else {
+		dispbottom "    @autopot <" + (.HP_Option?"hp":"sp") + "> <物品ID> {<最小" + (.HP_Option?"hp":"sp") + " % [1..100]> {<延迟时间 [" + .MinDelay + ".."+.MaxDelay+"]>}}";
 		dispbottom "    @autopot <" + (.HP_Option?"hp":"sp") + "> list";
 		dispbottom "    @autopot <" + (.HP_Option?"hp":"sp") + "> <on|off>";
 	}
@@ -39,18 +39,18 @@ L_Help:
 	return;
 
 L_Info:
-	dispbottom "----------Auto-Potion Information-----------";
+	dispbottom "----------自动喝药信息-----------";
 	if(.HP_Option){
-		dispbottom "HP POTION:  " + getitemname(@autopot_hp_ID) + " (" + @autopot_hp_ID + ")";
-		dispbottom "MIN HP:   " + @autopot_hp_Min + " %";
+		dispbottom "HP药品:  " + getitemname(@autopot_hp_ID) + " (" + @autopot_hp_ID + ")";
+		dispbottom "最低HP:   " + @autopot_hp_Min + " %";
 	}
 	if(.SP_Option){
-		dispbottom "SP POTION:  " + getitemname(@autopot_sp_ID) + " (" + @autopot_sp_ID + ")";
-		dispbottom "MIN SP:   " + @autopot_sp_Min + " %";
+		dispbottom "SP药品:  " + getitemname(@autopot_sp_ID) + " (" + @autopot_sp_ID + ")";
+		dispbottom "最低SP:   " + @autopot_sp_Min + " %";
 	}
-	dispbottom "DELAY:    " + @autopot_delay + " ms";
-	dispbottom "---------------------------------------------";
-	return;
+	dispbottom "延迟时间:    " + @autopot_delay + " 毫秒";
+	dispbottom "-----------------------------------";
+
 
 L_Start:
 	deltimer strnpcinfo(3) + "::OnStart";

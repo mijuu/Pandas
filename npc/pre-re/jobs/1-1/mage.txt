@@ -87,7 +87,7 @@ geffen_in,164,124,4	script	Mage Guildsman	123,{
 		}
 		if (job_magician_q == 0) {
 			mes "Wanna be a Mage, eh...?";
-			if (Sex == SEX_MALE)
+			if (Sex)
 				mes "Hey, look at you! You're kinda cute~! Not my type though...";
 			else {
 				mes "Oooh, you're such a hot babe~!";
@@ -104,7 +104,7 @@ geffen_in,164,124,4	script	Mage Guildsman	123,{
 				mes "[Mage Guildsman]";
 				mes "Now it's time for";
 				mes "me to give you the test.";
-				switch(rand(0,3)) {
+				switch(rand(3)) {
 				case 1:
 					mes "Make me a ^3355FFMixed Solution No. 1^000000";
 					mes "and bring it back to me.";
@@ -207,13 +207,21 @@ geffen_in,164,124,4	script	Mage Guildsman	123,{
 		mes "Congratulations!";
 		mes "You are now a Mage!";
 		next;
-		for ( .@quest_id = 1005; .@quest_id <= 1008; .@quest_id++ ) {
-			if (isbegin_quest(.@quest_id) == 1)
-				completequest .@quest_id;
-		}
 		callfunc "Job_Change",Job_Mage;
 		callfunc "F_ClearJobVar";
 		set Zeny,Zeny+50;
+		if(checkquest(1005) != -1) {
+			completequest 1005;
+		}
+		else if(checkquest(1006) != -1) {
+			completequest 1006;
+		}
+		else if(checkquest(1007) != -1) {
+			completequest 1007;
+		}
+		else {
+			completequest 1008;
+		}
 		mes "[Mage Guildsman]";
 		mes "'Welcome to My World~'";
 		mes "Heh heh, I just wanted to say that. You know, it's a quote from a well-known movie~";
@@ -224,7 +232,7 @@ geffen_in,164,124,4	script	Mage Guildsman	123,{
 	case 2:
 		mes "[Mage Guildsman]";
 		mes "Wanna be a Mage, eh?";
-		if (Sex == SEX_MALE)
+		if (Sex)
 			mes "For a cutie like you, I'd be happy to explain the requirements!";
 		else
 			mes "I'd be happy to explain the requirements for a pretty girl like you!";
@@ -240,30 +248,25 @@ geffen_in,164,124,4	script	Mage Guildsman	123,{
 				mes "make me a";
 				mes "^3355FFMixed Solution No. 1^000000";
 				mes "and bring it back to me.";
-				if (isbegin_quest(1005) == 0)
-					setquest 1005;
+				setquest 1005;
 				break;
 			case 2:
 				mes "make me a";
 				mes "^3355FFMixed Solution No. 2^000000";
 				mes "and bring it back to me.";
-				if (isbegin_quest(1006) == 0)
-					setquest 1006;
+				setquest 1006;
 				break;
 			case 3:
 				mes "make me a";
 				mes "^3355FFMixed Solution No. 3^000000";
 				mes "and bring it back to me.";
-				if (isbegin_quest(1007) == 0)
-					setquest 1007;
+				setquest 1007;
 				break;
 			default:
 				mes "make me a";
 				mes "^3355FFMixed Solution No. 4^000000";
 				mes "and bring it back to me.";
-				if (isbegin_quest(1008) == 0)
-					setquest 1008;
-				break;
+				setquest 1008;
 			}
 			next;
 			mes "[Mage Guildsman]";
@@ -294,7 +297,7 @@ geffen_in,164,112,4	script	Mixing Machine	111,{
 		mes "Solvent for";
 		mes "the Solution.";
 		next;
-		switch(select("Payon Solution.:Morocc Solution.:No Solvent.")) {
+		switch(select("Payon Solution.:Morroc Solution.:No Solvent.")) {
 		case 1:
 			if (countitem(1089) == 0) {
 				mes "[Mixing Machine]";
@@ -329,7 +332,7 @@ geffen_in,164,112,4	script	Mixing Machine	111,{
 				if (.@mixitem1_3 != 0) mes "Milk: " + .@mixitem1_3 + " ea.";
 				if (.@mixitem2 == 0) mes "Solvent: None.";
 				if (.@mixitem2 == 1) mes "Solvent: Payon Solution.";
-				if (.@mixitem2 == 2) mes "Solvent: Morocc Solution.";
+				if (.@mixitem2 == 2) mes "Solvent: Morroc Solution.";
 				next;
 				mes "[Mixing Machine]";
 				mes "Please choose if you wish to begin mixing, or to re-enter the number of items to be mixed.";
@@ -594,7 +597,7 @@ geffen_in,164,112,4	script	Mixing Machine	111,{
 	close;
 }
 
-// The Morocc Solution and Payon Solution traders
+// The Morroc Solution and Payon Solution traders
 // are also used in the Sage skill quests, and have
 // been moved to npc/quests/mage_solution.txt.
 //
@@ -680,9 +683,9 @@ geffen_in,177,112,4	script	Bookshelf	111,{
 		next;
 		mes "[Mage Test Solution No. 4]";
 		mes "* Solvent Agent *";
-		mes "Morocc Solution";
+		mes "Morroc Solution";
 		mes "Where to Find:";
-		mes "A small spring near entrance of pyramid in Morocc.";
+		mes "A small spring near entrance of pyramid in Morroc.";
 		next;
 		mes "[Mage Test Solution No. 4]";
 		mes "* Magic Power Serial Code *";

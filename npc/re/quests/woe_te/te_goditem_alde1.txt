@@ -33,7 +33,7 @@ te_aldecas1,226,34,3	script	Blacksmith Cano#tegod01	4_M_RACHMAN1,{
 		mes "Don't worry about me.";
 		close;
 	}
-	if (is_guild_leader() == false) {
+	if (getguildmaster(.@guild_id) != strcharinfo(0)) {
 		mes "I feel so grateful all the time about you letting me stay here.";
 		mes "It's nothing special... but if you want, I'll make you tools that could be of use.";
 		next;
@@ -284,7 +284,7 @@ S_Material:
 	mes "^4d4dff4 Presberk's Leather";
 	mes "1 Spirit of Hugin";
 	mes "1 Spirit of Munin";
-	mes "4 Giant's Chisel";
+	mes "1 Giant's Chisel";
 	mes "1 Jormungand's Rib";
 	mes "1 Wizardry Staff";
 	mes "1 Muspellium and Essence of Rune, respectively^000000";
@@ -346,7 +346,7 @@ S_Fuse:
 			mes "It shouldn't take long.";
 			mes "Here it is.";
 			mes "It is an essential material for making Hervor and Jormungand.";
-			delitem 12735,200;// Runstone_Ancient
+			delitem 12735,200;// RunstonET_FRETcient
 			delitem 12736,100;// Runstone_Mystic
 			getitem 6604,1;// Essence_Of_Rune
 			close;
@@ -370,9 +370,9 @@ S_Fuse:
 
 OnInit:
 	if ($2012_tegod_kafra == 3 || agitcheck3())// 3 -> quest failed
-		disablenpc();
+		disablenpc strnpcinfo(0);
 	else
-		enablenpc();
+		enablenpc strnpcinfo(0);
 	end;
 }
 
@@ -996,7 +996,7 @@ OnCommandOn:
 OnCommandOff:
 	setnpcdisplay strnpcinfo(0),CLEAR_NPC;
 OnInit:
-	disablenpc();
+	disablenpc strnpcinfo(0);
 	end;
 }
 te_aldecas1,227,35,3	duplicate(#end_aira_alde01)	#end_kuluna_alde01	CLEAR_NPC

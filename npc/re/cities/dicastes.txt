@@ -1,4 +1,8 @@
-//===== rAthena Script ======================================= 
+//============================================================
+//= rAthenaCN [åŸé•‡äººå‘˜]æ±‰åŒ–è„šæœ¬ 
+//============================================================
+
+//===== rAthena Script =======================================
 //= El Dicastes Town
 //===== By: ================================================== 
 //= Gennosuke Kouga, Muad_Dib
@@ -17,701 +21,701 @@
 //= 1.3 Updated to match official script. [SkittleNugget]
 //============================================================
 
-dicastes01,194,159,5	script	Excited Galten#a	492,{
-	mes "[Excited Galten]";
+dicastes01,194,159,5	script	æ¿€åŠ¨çš„åŠ å°”æ»•#a	492,{
+	mes "[æ¿€åŠ¨çš„åŠ å°”æ»•]";
 	if (isequipped(2782)) {
-		mes "I can't get beautiful";
-		mes "Ahat's image out of my head.";
+		mes "æˆ‘æ— æ³•å¿˜è®°";
+		mes "è‰¾å“ˆç‰¹é‚£ç¾ä¸½çš„å½±åƒ.";
 		emotion ET_THROB;
-		mes "As long as we have him,";
-		mes "it will only be a matter of time before Sapha";
-		mes "will rule this land.";
+		mes "åªè¦æˆ‘ä»¬æœ‰ä»–,";
+		mes "å¯¹äºæ²™å¸•æ¥è¯´åªä¼šæ˜¯ä¸€ä¸ªæ—¶é—´é—®é¢˜";
+		mes "å°†ç»Ÿæ²»è¿™ç‰‡åœŸåœ°.";
 		close; 
 	}
-	mes "¡ø¢²¢£ ¡Ğ ¡ò¡ğ¡ğ";
-	mes "¡÷¡ø¡ñ ¡ü ¡ü";
-	mes "¡ù¢²¢³ ¢²";
-	mes "¡ó¡õ¡ô ¢£ ¡Ğ¡û¡ü ¡ò ¡ğ¡ö¢£";
-	mes "¢¤¡õ¡ş ¡÷ ¡ñ";
+	mes "â–²â’‰â…² âŒ’ â—â—‹â—‹";
+	mes "â–³â–²â— â†‘ â†‘";
+	mes "â€»â’‰â’Š â’‰";
+	mes "â—‡â–¡â—† â…² âŒ’â†â†‘ â— â—‹â– â…²";
+	mes "â…³â–¡ã€“ â–³ â—";
 	close;
 }
 
-dicastes01,202,86,3	script	Sentinel#a	4_MAN_GALTUN,{
-	mes "[Sentinel]";
+dicastes01,202,86,3	script	å“¨å…µ#a	492,{
+	mes "[å“¨å…µ]";
 	if (isequipped(2782)) {
-		mes "El Dicastes, the";
-		mes "capital city of Sapha.";
-		mes "The land is pretty";
-		mes "rough so many outsiders can't get in. Ha ha";
+		mes "åŸƒè¿ªæ–¯ç‰¹æ–¯,";
+		mes "æ²™å¸•é¦–éƒ½.";
+		mes "è¿™ç‰‡åœŸåœ°ç›¸å½“ç²—æ—·";
+		mes "è¿™ä¹ˆå¤šå¤–äººä¸èƒ½è¿›å». å“ˆå“ˆ";
 		next;
-		mes "[Sentinel]";
+		mes "[å“¨å…µ]";
 		mes "...";
 		next;
-		mes "[Sentinel]";
-		mes "Hey, you are an outsider!";
+		mes "[å“¨å…µ]";
+		mes "å˜¿,ä½ æ˜¯å¤–äºº!";
 		close; 
 	}
-	mes "¡ô¢±¢± ¡û ¡ó¡Ğ¡ñ ¢£ ¢¤¡ú";
-	mes "¡ø¡ó¢² ¢¤ ";
-	mes "¡õ¡ó¡Ğ ¢³ ¡Ğ¡õ¢£ ¡û ¡ú¡ï";
+	mes "â—†â’ˆâ’ˆ â† â—‡âŒ’â— â…² â…³â†’";
+	mes "â–²â—‡â’‰ â…³ ";
+	mes "â–¡â—‡âŒ’ â’Š âŒ’â–¡â…² â† â†’â˜…";
 	next;
-	mes "[Sentinel]";
-	mes "¡ù";
+	mes "[å“¨å…µ]";
+	mes "â€»";
 	next;
-	mes "[Sentinel]";
-	mes "¡ñ¡ö¡ï ¡ú ¡ó¢³¡ô";
+	mes "[å“¨å…µ]";
+	mes "â—â– â˜… â†’ â—‡â’Šâ—†";
 	close;	
 }
 
-dicastes01,194,95,5	script	Sentinel#b	450,{
-	mes "[Sentinel]";
+dicastes01,194,95,5	script	å“¨å…µ#b	450,{
+	mes "[å“¨å…µ]";
 	if (isequipped(2782)) {
-		mes "I permit your entry.";
-		mes "But if you dare to cause trouble";
-		mes "you won't know what hit you. Beware!";
+		mes "æˆ‘å…è®¸ä½ å…¥å¢ƒ.";
+		mes "ä½†æ˜¯,å¦‚æœä½ æ•¢æ£ä¹±";
+		mes "ä½ ä¸ä¼šçŸ¥é“ä½ è¢«ä»€ä¹ˆä¸œè¥¿æ‰“äº†. å°å¿ƒ!";
 		close; 
 	}
-	mes "¡ø¡ô¡ü ¡ø ¡ó";
-	mes "¡ø¡ï¡û ¡ó ¡û¢¤¢² ¡÷ ¢£";
-	mes "¢¤¡ô¡ø ¢³ ¡÷¡û¡ö ¡õ ¡ø";
+	mes "â–²â—†â†‘ â–² â—‡";
+	mes "â–²â˜…â† â—‡ â†â…³â’‰ â–³ â…²";
+	mes "â…³â—†â–² â’Š â–³â†â–  â–¡ â–²";
 	close;
 }
 
-dicastes01,234,158,0	script	Training Galten#a	450,{
-	mes "[Training Galten]";
+dicastes01,234,158,0	script	è®­ç»ƒä¸­çš„åŠ å°”æ»•#a	450,{
+	mes "[è®­ç»ƒä¸­çš„åŠ å°”æ»•]";
 	if (isequipped(2782)) {
-		mes "I'll be ready for anything";
-		mes "if I keep up with my training every day.";
+		mes "æˆ‘ä¼šåšå¥½ä¸€åˆ‡å‡†å¤‡";
+		mes "å¦‚æœæˆ‘æ¯å¤©æŒç»­è®­ç»ƒ.";
 		close;
 	}
-	mes "ø¡ô¡ü ¡¡ø¡ô¡ü ¡ø";
-	mes "ô ¡ø";
+	mes "â–²â—†â†‘ â–² â–²â—†â†‘ â–²";
+	mes "?â–²";
 	next;
-	mes "Don't know what it means.";
+	mes "ä¸çŸ¥é“æ˜¯ä»€ä¹ˆæ„æ€.";
 	close;
 }
 
-dicastes01,244,166,0	script	Training Galten#b	450,{
-	mes "[Training Galten]";
+dicastes01,244,166,0	script	è®­ç»ƒä¸­çš„åŠ å°”æ»•#b	450,{
+	mes "[è®­ç»ƒä¸­çš„åŠ å°”æ»•]";
 	if (isequipped(2782)) {
-		mes "I wonder if Ahat knows how";
-		mes "hard I am training.";
+		mes "å¦‚æœè‰¾å“ˆç‰¹çŸ¥é“";
+		mes "æˆ‘è®­ç»ƒçš„å‘¢ä¹ˆè‰°è‹¦.";
 		close; 
 	}
-	mes "¡ø¡ô¡ü ¡ø";
-	mes "¡ø¡ô¡ü ¡ø ¡ø¡ô¡ü ¡ø ¡ø¡ô¡ü ¡ø";
+	mes "â–²â—†â†‘ â–²";
+	mes "â–²â—†â†‘ â–² â–²â—†â†‘ â–² â–²â—†â†‘ â–²";
 	next;
-	mes "Don't know what it means.";
+	mes "ä¸çŸ¥é“æ˜¯ä»€ä¹ˆæ„æ€.";
 	close;
 }
 
-dicastes01,272,166,0	script	Training Galten#c	450,{
-	mes "[Training Galten]";
+dicastes01,272,166,0	script	è®­ç»ƒä¸­çš„åŠ å°”æ»•#c	450,{
+	mes "[è®­ç»ƒä¸­çš„åŠ å°”æ»•]";
 	if (isequipped(2782)) {
-		mes "[Training Galten]";
-		mes "I am a Sapha warrior.";
-		mes "I am never lazy with my training.";
+		mes "[è®­ç»ƒä¸­çš„åŠ å°”æ»•]";
+		mes "æˆ‘æ˜¯æ²™å¸•æˆ˜å£«.";
+		mes "æˆ‘è®­ç»ƒä»ä¸å·æ‡’.";
 		close;
 	}
-	mes "¡ø¡ô¡ü ¡ø ¡ø¡ô¡ü ¡ø";
-	mes "¡ø¡ô¡ü ¡ø";
+	mes "â–²â—†â†‘ â–² â–²â—†â†‘ â–²";
+	mes "â–²â—†â†‘ â–²";
 	next;
-	mes "Don't know what it means.";
+	mes "ä¸çŸ¥é“æ˜¯ä»€ä¹ˆæ„æ€.";
 	close;
 }
 
-dicastes01,248,129,0	script	Training Galten#d	450,{
-	mes "[Training Galten]";
+dicastes01,248,129,0	script	è®­ç»ƒä¸­çš„åŠ å°”æ»•#d	450,{
+	mes "[è®­ç»ƒä¸­çš„åŠ å°”æ»•]";
 	if (isequipped(2782)) {
-		mes "[Training Galten]";
-		mes "I heard this isn't training";
-		mes "equipment but a massager";
-		mes "for trainees like me.";
+		mes "[è®­ç»ƒä¸­çš„åŠ å°”æ»•]";
+		mes "æˆ‘å¬è¯´è¿™æ˜¯ä¸æ˜¯è®­ç»ƒ";
+		mes "è£…å¤‡, å¯¹æˆ‘æ¥è¯´";
+		mes "åªæ˜¯æŒ ç—’ç—’.";
 		close; 
 	}
-	mes "¡ø¡ô¡ü ¡ø ¡ø¡ô¡ü";
-	mes "¡ø¡ô¡ü ¡ø¡ ø¡ô¡ü ¡ø";
+	mes "â–²â—†â†‘ â–² â–²â—†â†‘";
+	mes "â˜…â–¡â€» â–  â—â—‹â’‰ â’Š â– ";
 	next;
-	mes "Don't know what it means.";
+	mes "ä¸çŸ¥é“æ˜¯ä»€ä¹ˆæ„æ€.";
 	close;
 }
 
 /*
-dicastes01,271,152,0	script	Training Galten#e	450,{
-	mes "[Training Galten]";
+dicastes01,271,152,0	script	è®­ç»ƒä¸­çš„åŠ å°”æ»•#e	450,{
+	mes "[è®­ç»ƒä¸­çš„åŠ å°”æ»•]";
 	if (isequipped(2782)) {
-		mes "I will get great results";
-		mes "if I do my best, right?";
+		mes "æˆ‘ä¼šå¾—åˆ°å¥½çš„æ•ˆæœ";
+		mes "å¦‚æœæˆ‘å°½æˆ‘æ‰€èƒ½, å¯¹å—?";
 		close;
 	}
-	mes "¡ø¢²¡û ¡ô ¢£¢³¡ô";
-	mes "¡ü¡ô";
+	mes "â–²â’‰â† â—† â…²â’Šâ—†";
+	mes "â†‘â—†";
 	close;
 }
 */
 
-dic_in01,349,282,4	script	Waiting Galten#in_1	492,{
+dic_in01,349,282,4	script	ç­‰å¾…ä¸­çš„åŠ å°”æ»•#in_1	492,{
 	if (isequipped(2782)) {
-		mes "[Waiting Galten]";
-		mes "Here is the Battle Station.";
-		mes "We are all tensed up to be ready for action.";
+		mes "[ç­‰å¾…ä¸­çš„åŠ å°”æ»•]";
+		mes "è¿™é‡Œæ˜¯æˆ˜æ–—åŸºåœ°.";
+		mes "æˆ‘ä»¬éƒ½ç´§å¼ èµ·æ¥å°†å‡†å¤‡é‡‡å–è¡ŒåŠ¨.";
 		close;	 
 	}
-	mes "[¢²¡Ğ¡û ¡ù ¡Ğ]";
-	mes "¡ñ¡õ¡ü ¢£ ¡ó";
-	mes "¢¤¡ó¡õ ¢£ ¢£¡ò¡ô ¡ö ¡ú¢¤¡ú ¢¤ ¡ò¡ö¡õ ¢¤ ";
+	mes "[â’‰âŒ’â† â€» âŒ’]";
+	mes "â—â–¡â†‘ â…² â—‡";
+	mes "â…³â—‡â–¡ â…² â…²â—â—† â–  â†’â…³â†’ â…³ â—â– â–¡ â…³ ";
 	close;
 }
 
-dic_in01,370,261,1	script	Waiting Galten#in_2	492,{
+dic_in01,370,261,1	script	ç­‰å¾…ä¸­çš„åŠ å°”æ»•#in_2	492,{
 	if (isequipped(2782)) {
-		mes "[Waiting Galten]";
-		mes "Boring.";
+		mes "[ç­‰å¾…ä¸­çš„åŠ å°”æ»•]";
+		mes "æ— èŠ.";
 		close; 
 	}
-	mes "[¢²¡Ğ¡û ¡ù ¡Ğ]";
-	mes "¡ù¢¤¢±";
+	mes "[â’‰âŒ’â† â€» âŒ’]";
+	mes "â€»â…³â’ˆ";
 	close;
 }
 
-dic_in01,381,261,1	script	Waiting Galten#in_3	492,{
+dic_in01,381,261,1	script	ç­‰å¾…ä¸­çš„åŠ å°”æ»•#in_3	492,{
 	if (isequipped(2782)) {
-		mes "[Waiting Galten]";
+		mes "[ç­‰å¾…ä¸­çš„åŠ å°”æ»•]";
 		mes "Zzzzz...";
 		close; 
 	}
-	mes "[¢²¡Ğ¡û ¡ù ¡Ğ]";
-	mes "¡ú¡ô";
+	mes "[â’‰âŒ’â† â€» âŒ’]";
+	mes "â†’â—†";
 	close;
 }
 
-dic_in01,370,282,4	script	Waiting Galten#in_4	492,{
+dic_in01,370,282,4	script	ç­‰å¾…ä¸­çš„åŠ å°”æ»•#in_4	492,{
 	if (isequipped(2782)) {
-		mes "[Waiting Galten]";
-		mes "El Dicastes is the most peaceful place in this world as long as I am here.";
+		mes "[ç­‰å¾…ä¸­çš„åŠ å°”æ»•]";
+		mes "åŸƒè¿ªæ–¯ç‰¹æ–¯æ˜¯è¿™ä¸ªä¸–ç•Œä¸Šæœ€å’Œå¹³çš„åœ°æ–¹,åªè¦æˆ‘åœ¨è¿™é‡Œ.";
 		close; 
 	}
-	mes "[¢²¡Ğ¡û ¡ù ¡Ğ]";
-	mes "¡ï¡ï¢³ ¡ş ¡ö¢³¢£ ¢± ¢³¡û¡õ ¡ø ¡ş¡ï¡ï ¡ø ¡û";
+	mes "[â’‰âŒ’â† â€» âŒ’]";
+	mes "â˜…â˜…â’Š ã€“ â– â’Šâ…² â’ˆ â’Šâ†â–¡ â–² ã€“â˜…â˜… â–² â†";
 	close;
 }
 
-dic_in01,354,219,4	script	Resting Galten#in_5	492,{
+dic_in01,354,219,4	script	ä¼‘æ¯çš„åŠ å°”æ»•#in_5	492,{
 	if (isequipped(2782)) {
-		mes "[Resting Galten]";
-		mes "Resting is always so sweet.";
+		mes "[ä¼‘æ¯çš„åŠ å°”æ»•]";
+		mes "ä¼‘æ¯æ€»æ˜¯é‚£ä¹ˆèˆ’æœ.";
 		close; 
 	}
-	mes "[¡õ¡ø¡ò ¡ü ¢¤]";
-	mes "¡ï¡õ¡ù ¡ö ¡ò¡ğ¢² ¢³ ¡ö";
+	mes "[â–¡â–²â— â†‘ â…³]";
+	mes "â˜…â–¡â€» â–  â—â—‹â’‰ â’Š â– ";
 	close;
 }
 
-dic_in01,365,197,1	script	Resting Galten#in_6	492,{
+dic_in01,365,197,1	script	ä¼‘æ¯çš„åŠ å°”æ»•#in_6	492,{
 	if (isequipped(2782)) {
-		mes "[Resting Galten]";
-		mes "Galten can also rest while standing up like this.";
+		mes "[ä¼‘æ¯çš„åŠ å°”æ»•]";
+		mes "åŠ å°”æ»•å¯ä»¥åƒè¿™æ ·ç«™ç€ä¼‘æ¯.";
 		next;
-		mes "[Resting Galten]";
-		mes "You say I don't look like I'm resting? But I'm already used to this.";
+		mes "[ä¼‘æ¯çš„åŠ å°”æ»•]";
+		mes "ä½ è¯´æˆ‘ä¸å–œæ¬¢çœ‹æˆ‘ä¼‘æ¯?ä½†æˆ‘å·²ç»ä¹ æƒ¯äº†è¿™ç§.";
 		close; 
 	}
-	mes "[¡õ¡ø¡ò ¡ü ¢¤]";
-	mes "¡ô¡ï¢¤ ¡ö ¡ù¡ğ¡ñ ¡ü ¡ó¡û¡û";
-	mes "¡ï¢£¡ó ¡ù ¢³¡ô¡ğ ¢£ ¡Ğ¡û¡ô ¡ô ¡Ğ¡ú¡ù ¡ô ¡ó";
+	mes "[â–¡â–²â— â†‘ â…³]";
+	mes "â—†â˜…â…³ â–  â€»â—‹â— â†‘ â—‡â†â†";
+	mes "â˜…â…²â—‡ â€» â’Šâ—†â—‹ â…² âŒ’â†â—† â—† âŒ’â†’â€» â—† â—‡";
 	close;
 }
 
-dic_in01,87,102,5	script	Resting Piom#01	454,{
+dic_in01,87,102,5	script	ä¼‘æ¯çš„çš®å¥¥å§†#01	454,{
 	end;
 }
 
-dic_in01,29,119,4	script	Resting Piom#04	489,{
+dic_in01,29,119,4	script	ä¼‘æ¯çš„çš®å¥¥å§†#04	489,{
 	if (isequipped(2782)) {
-		mes "[Resting Piom]";
-		mes "Why is it so noisy when I'm trying to get rest?";
+		mes "[ä¼‘æ¯çš„çš®å¥¥å§†]";
+		mes "ä¸ºä»€ä¹ˆè¿™ä¹ˆåµçš„æ—¶å€™æˆ‘è¯•å›¾å¾—åˆ°ä¼‘æ¯?";
 		close; 
 	}
-	mes "[¢£¡ù¡ò ¢¤ ¡ù]";
-	mes "¡ü¢²¡ğ ¡Ğ ¡ò¡ø¢² ¡ô ¢²¡õ";
+	mes "[â…²â€»â— â…³ â€»]";
+	mes "â†‘â’‰â—‹ âŒ’ â—â–²â’‰ â—† â’‰â–¡";
 	close;
 }
 
-dic_in01,91,113,5	script	Suspicious Piom#a	489,{
-	mes "[Suspicious Piom]";
+dic_in01,91,113,5	script	å¯ç–‘çš„çš®å¥¥å§†#a	489,{
+	mes "[å¯ç–‘çš„çš®å¥¥å§†]";
 	if (isequipped(2782)) {
-		mes "Have you heard of the";
-		mes "rumor about Ahat?";
+		mes "ä½ æœ‰æ²¡æœ‰å¬è¯´è¿‡";
+		mes "æœ‰å…³è‰¾å“ˆç‰¹çš„ä¼ é—»?";
 		next;
-		if(select("Nope!:You first.") == 1) {
-			mes "[Suspicious Piom]";
-			mes "Never mind.";
+		if(select("- æ²¡æœ‰!:- ä½ å…ˆè¯´.") == 1) {
+			mes "[å¯ç–‘çš„çš®å¥¥å§†]";
+			mes "æ²¡å…³ç³».";
 			close; 
 		}
-		mes "[Suspicious Piom]";
-		mes "Oh, you do seem to know?";
-		mes "I need to collect information.";
-		mes "You first.";
-		mes "You heard of the rumor, right?";
+		mes "[å¯ç–‘çš„çš®å¥¥å§†]";
+		mes "å‘ƒ, ä½ ä¼¼ä¹çŸ¥é“?";
+		mes "æˆ‘éœ€è¦æ”¶é›†ä¸€äº›ä¿¡æ¯.";
+		mes "ä½ å…ˆè¯´.";
+		mes "ä½ å¬è¯´çš„ä¼ é—», å¦‚ä½•?";
 		next;
-		if(select("Something is fishy?:If you're not going to spill it, me neither!") == 1) {
-			mes "[Suspicious Piom]";
-			mes "I'm only a very curious";
-			mes "ordinary Piom.";
+		if(select("- æœ‰äº›å¯ç–‘?:å¦‚æœä½ ä¸æ‰“ç®—é€éœ²çš„è¯,æˆ‘ä¹Ÿä¸€æ ·!") == 1) {
+			mes "[å¯ç–‘çš„çš®å¥¥å§†]";
+			mes "æˆ‘åªæ˜¯ä¸€ä¸ªå¾ˆå¥½å¥‡";
+			mes "æ™®é€šçš„çš®å¥¥å§†.";
 			close; 
 		}
-		mes "[Suspicious Piom]";
-		mes "I am not going to say anything, either!";
+		mes "[å¯ç–‘çš„çš®å¥¥å§†]";
+		mes "æˆ‘ä¸ä¼šè¯´ä»€ä¹ˆ!";
 		close; 
 	}
-	mes "¡ó¢³¡ó ¡ó ¡ó¡ş¡ö";
-	mes "¡õ ¢³¢²¡÷ ¡ó¡ó";
+	mes "â—‡â’Šâ—‡ â—‡ â—‡ã€“â– ";
+	mes "â–¡ â’Šâ’‰â–³ â—‡â—‡";
 	next;
-	if(select("Can't tell what it means:Is it a curse??") == 2) {
-		mes "[Suspicious Piom]";
-		mes "Too bad.";
+	if(select("- è¯´ä¸å‡ºæ˜¯ä»€ä¹ˆæ„æ€:- å®ƒæ˜¯ä¸€ä¸ªè¯…å’’??") == 2) {
+		mes "[å¯ç–‘çš„çš®å¥¥å§†]";
+		mes "å¤ªç³Ÿäº†.";
 		close; 
 	}
-	mes "[Suspicious Piom]";
-	mes "Be on your";
-	mes "way, shoo";
+	mes "[å¯ç–‘çš„çš®å¥¥å§†]";
+	mes "ç”¨è‡ªå·±çš„æ–¹å¼";
+	mes "æ–¹å¼, å˜˜";
 	close;
 }
 
-dic_in01,168,116,5	script	Tired Piom#c	491,{
-	mes "[Tired Piom]";
+dic_in01,168,116,5	script	ç–²åŠ³çš„çš®å¥¥å§†#c	491,{
+	mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
 	if (isequipped(2782)) {
-		mes "If you need any";
-		mes "information, you'd have better";
-		mes "luck with the Cat Merchant than wandering around here.";
-		mes "But of course you'll have to pay the price.";
+		mes "å¦‚æœä½ éœ€è¦ä»»ä½•ä¿¡æ¯";
+		mes "ä½ æœ€å¥½æ˜¯ä»é™„è¿‘";
+		mes "çš„çŒ«å•†äººè¿™é‡Œå»æ‰“å¬.";
+		mes "å½“ç„¶ä½ å¿…é¡»è¦ä»˜å‡ºçš„ä»£ä»·.";
 		close; 
 	}
-	mes "¡ş¡õ¡ğ ¢³ ¢³¡ş";
-	mes "¡ş¡ø¡ğ ¡ö ¡ñ¡ú¡ğ ¡ò";
-	mes "¡ï¡ñ¡ú ¡ô ¡ö¡ö¡ò ¡û ¡ó¢¤¡ø ¡ø ¢² ¡ø";
-	mes "¢¤¢²¡ø ¡ò ¡ú¡ó¢±";
+	mes "ã€“â–¡â—‹ â’Š â’Šã€“";
+	mes "ã€“â–²â—‹ â–  â—â†’â—‹ â—";
+	mes "â˜…â—â†’ â—† â– â– â— â† â—‡â…³â–² â–² â’‰ â–²";
+	mes "â…³â’‰â–² â— â†’â—‡â’ˆ";
 	close;
 }
 
-dic_in01,149,104,5	script	Tired Piom#b	455,{
-	mes "[Tired Piom]";
+dic_in01,149,104,5	script	ç–²åŠ³çš„çš®å¥¥å§†#b	455,{
+	mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
 	if (isequipped(2782)) {
-		mes "I feel so stiff...";
-		mes "I will need another dose of Bradium.";
-		mes "I think the effects are weaker than before,";
-		mes "or is it just me?";
+		mes "æˆ‘è§‰å¾—è¿™ä¹ˆåƒµç¡¬...";
+		mes "æˆ‘éœ€è¦å¦ä¸€å‰‚é‡çš„é­”åŠ›ä¹‹çŸ³.";
+		mes "æˆ‘è§‰å¾—æ•ˆæœä¸å¦‚å‰,";
+		mes "è¿˜æ˜¯åªæœ‰æˆ‘è¿™ä¹ˆè§‰å¾—?";
 		emotion ET_QUESTION;
 		close; 
 	}
-	mes "¡ğ¡Ğ¡ú ¡ø ¢²";
-	mes "¡ö¡õ¡ó ¢¤ ¡ò¡ò¢³ ¡ô ¡ô¡ó¡ñ";
-	mes "¢£¡ñ¡ş ¡ü ¢²¡û¡ó ¡ò ¡ğ¡ş";
-	mes "¡ö¡ú¡ñ ¢³";
+	mes "â—‹âŒ’â†’ â–² â’‰";
+	mes "â– â–¡â—‡ â…³ â—â—â’Š â—† â—†â—‡â—";
+	mes "â…²â—ã€“ â†‘ â’‰â†â—‡ â— â—‹ã€“";
+	mes "â– â†’â— â’Š";
 	emotion ET_QUESTION;
 	close;
 }
 
-dic_in01,341,113,3	script	Tired Piom#a	491,{
-	mes "[Tired Piom]";
+dic_in01,341,113,3	script	ç–²åŠ³çš„çš®å¥¥å§†#a	491,{
+	mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
 	if (isequipped(2782)) {
-		mes "[Tired Piom]";
-		mes "I think I look better in";
-		mes "robes than in leather.";
-		mes "I may have to change to knitting.";
-		mes "But mining does seem to suit me.";
+		mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
+		mes "æˆ‘è§‰å¾—æˆ‘";
+		mes "ç©¿é•¿è¢æ¯”çš®é©å¥½.";
+		mes "æˆ‘å¯èƒ½è¦æ”¹å˜ç€è£….";
+		mes "ä½†é‡‡çŸ¿ä¼¼ä¹ç¡®å®é€‚åˆæˆ‘.";
 		next;
-		mes "[Tired Piom]";
+		mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
 		mes "...";
 		next;
 		emotion ET_SWEAT;
-		mes "[Tired Piom]";
-		mes "I'll be rejected again, right?";
+		mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
+		mes "æˆ‘ä¼šå†æ¬¡æ‹’ç»äº†å§?";
 		close; 
 	}
-	mes "¡÷¡ò¡û ¡ó ¡ó¡Ğ¢±";
-	mes "¡ó¡õ¡ù ¡ş ¡ò¢±¡ñ ¡õ ¢£";
-	mes "¡ü¡ğ¢¤ ¡ù ¡ò¡ô¡õ ¡ò ¡ñ";
-	mes "¢³¡ú¢³ ¡Ğ ¡ñ¡õ¡ù ¡÷ ¡÷¢±";
+	mes "â–³â—â† â—‡ â—‡âŒ’â’ˆ";
+	mes "â—‡â–¡â€» ã€“ â—â’ˆâ— â–¡ â…²";
+	mes "â†‘â—‹â…³ â€» â—â—†â–¡ â— â—";
+	mes "â’Šâ†’â’Š âŒ’ â—â–¡â€» â–³ â–³â’ˆ";
 	next;
-	mes "[Tired Piom]";
-	mes "¡ş";
+	mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
+	mes "ã€“";
 	next;
 	emotion ET_SWEAT;
-	mes "[Tired Piom]";
-	mes "¡ø¡ú¡ø ¢± ¡ö¡ò";
+	mes "[ç–²åŠ³çš„çš®å¥¥å§†]";
+	mes "â–²â†’â–² â’ˆ â– â—";
 	close;
 }
 
-dic_in01,252,103,3	script	Eating Adventurer#tre	711,{
-	mes "[Eating Adventurer]";
-	mes "Hey, do you have any emergency rations on you from Midgard?";
+dic_in01,252,103,3	script	è¿›é£Ÿçš„å†’é™©å®¶#tre	711,{
+	mes "[è¿›é£Ÿçš„å†’é™©å®¶]";
+	mes "å˜¿, ä½ æœ‰æ²¡æœ‰ä»ç±³å¾·åŠ å…¹å¸¦ç´§æ€¥å£ç²®?";
 	next;
-	mes "[Eating Adventurer]";
-	mes "I came all the way here with a hungry stomach because I heard there was a Midgard pub but I've never tasted this food anywhere in Midgard.";
+	mes "[è¿›é£Ÿçš„å†’é™©å®¶]";
+	mes "æˆ‘ä¸€è·¯èµ°è¿‡æ¥åœ¨è¿™é‡Œä¸è‚šå­ä¸€é¥¿,å› ä¸ºæˆ‘å¬è¯´æœ‰ä¸€ä¸ªç±³å¾·åŠ å…¹çš„é…’å§,ä½†æˆ‘ä»æ¥æ²¡æœ‰åœ¨ä»»ä½•åœ°æ–¹å°åˆ°äº†ç±³å¾·åŠ å…¹è¿™ç§é£Ÿç‰©.";
 	next;
-	mes "[Eating Adventurer]";
-	mes "No, I'm sure nobody in Midgard would want to try this.";
+	mes "[è¿›é£Ÿçš„å†’é™©å®¶]";
+	mes "æˆ‘æ•¢è‚¯å®šæ²¡æœ‰äººåœ¨ç±³å¾·åŠ å…¹ä¼šæƒ³è¯•è¯•è¿™ä¸ª.";
 	next;
-	mes "[Eating Adventurer]";
-	mes "I really would like a nice hot meal.";
-	mes "I go to this great little restaurant in Geffen often and I really miss that place now.";
+	mes "[è¿›é£Ÿçš„å†’é™©å®¶]";
+	mes "æˆ‘çœŸçš„æƒ³ä¸€ä¸ªä¸é”™çš„çƒ­é¥­.";
+	mes "æˆ‘å»åœ¨å‰èŠ¬è¿™ä¸ªä¼Ÿå¤§çš„å°é¥­é¦†ç»å¸¸å’Œæˆ‘çœŸçš„å¾ˆæƒ³å¿µé‚£ä¸ªåœ°æ–¹ç°åœ¨.";
 	close;
 }
 
-dic_in01,32,54,5	script	Venknick#el_01	449,{
+dic_in01,32,54,5	script	å‡¡å®¢å°¼å…‹#el_01	449,{
 	if (isequipped(2782)) {
-		mes "[Venknick]";
-		mes "Oh feels so refreshed.";
-		mes "The refined Bradium was the best ever. Do you want to try some?";
+		mes "[å‡¡å®¢å°¼å…‹]";
+		mes "æ„Ÿè§‰å¾ˆæ¸…æ–°.";
+		mes "ç²¾ç‚¼çš„é­”åŠ›ä¹‹çŸ³æ˜¯æœ‰å²ä»¥æ¥æœ€å¥½çš„.ä½ æƒ³å°è¯•ä¸€äº›?";
 		close; 
 	}
-	mes "[¡ó¡ò¡ğ]";
-	mes "¡ù¡ó¢¤ ¢± ¢£";
-	mes "¡õ¡ş¡ï ¢£ ¡÷¡÷¢¤ ¡ú ¡ó¡ñ¡ö ¢² ¡ş¢²¢¤ ¢² ¢£?";
+	mes "[â—‡â—â—‹]";
+	mes "â€»â—‡â…³ â’ˆ â…²";
+	mes "â–¡ã€“â˜… â…² â–³â–³â…³ â†’ â—‡â—â–  â’‰ ã€“â’‰â…³ â’‰ â…²?";
 	close;
 }
 
-dic_in01,372,116,3	script	Thrilled Piom#a	490,{
-	mes "[Thrilled Piom]";
+dic_in01,372,116,3	script	æ¿€åŠ¨çš„çš®å¥¥å§†#a	490,{
+	mes "[æ¿€åŠ¨çš„çš®å¥¥å§†]";
 	if (isequipped(2782)) {
-		mes "Ahat is the one";
-		mes "and only Sapha pride.";
-		mes "We have plenty of Bradium";
-		mes "because of him!";
+		mes "è‰¾å“ˆç‰¹æ˜¯æ²™å¸•ç‹¬ä¸€æ— äºŒ";
+		mes "çš„éª„å‚².";
+		mes "æˆ‘ä»¬æœ‰å¾ˆå¤šçš„é­”åŠ›ä¹‹çŸ³";
+		mes "éƒ½æ˜¯å› ä¸ºä»–!";
 		next;
-		mes "[Thrilled Piom]";
+		mes "[æ¿€åŠ¨çš„çš®å¥¥å§†]";
 		mes "...";
 		next;
-		mes "[Thrilled Piom]";
-		mes "You don't feel his";
-		mes "blessing?";
+		mes "[æ¿€åŠ¨çš„çš®å¥¥å§†]";
+		mes "ä½ ä¸è§‰å¾—æ˜¯ä»–çš„";
+		mes "ç¥ç¦?";
 		close;
 	}
-	mes "¡ò¡õ¢³ ¡õ ¡ô";
-	mes "¢£¡ó¡ø ¢² ¡ô¡÷";
-	mes "¡ò¡ô¢³ ¡ù ¢±¡ó¢± ¡õ";
-	mes "¡ó¡ü¡Ğ ¡ø ¢²¡ü¡Ğ ¡õ ¡ï";
+	mes "â—â–¡â’Š â–¡ â—†";
+	mes "â…²â—‡â–² â’‰ â—†â–³";
+	mes "â—â—†â’Š â€» â’ˆâ—‡â’ˆ â–¡";
+	mes "â—‡â†‘âŒ’ â–² â’‰â†‘âŒ’ â–¡ â˜…";
 	next;
-	mes "[Thrilled Piom]";
-	mes "¢£";
+	mes "[æ¿€åŠ¨çš„çš®å¥¥å§†]";
+	mes "â…²";
 	next;
-	mes "[Thrilled Piom]";
-	mes "¡Ğ¢¤¡ù ¢£ ¡ó¡ó";
-	mes "¡ù¡ó¡÷ ¡û ¡ş¡ô";
+	mes "[æ¿€åŠ¨çš„çš®å¥¥å§†]";
+	mes "âŒ’â…³â€» â…² â—‡â—‡";
+	mes "â€»â—‡â–³ â† ã€“â—†";
 	close;
 }
 
-dic_in01,360,125,5	script	Serious Venknicka	449,{
-	mes "[Serious Venknick]";
+dic_in01,360,125,5	script	ä¸¥è‚ƒçš„å‡¡å®¢å°¼å…‹	449,{
+	mes "[ä¸¥è‚ƒçš„å‡¡å®¢å°¼å…‹]";
 	if (isequipped(2782)) {
-		mes "A sudden increase in Bradium production.";
-		mes "Why?";
-		mes "I will have to get more factory lines running.";
+		mes "é­”åŠ›ä¹‹çŸ³çš„äº§é‡çªç„¶å¢åŠ .";
+		mes "ä¸ºä»€ä¹ˆ?";
+		mes "æˆ‘ä¼šå¾—åˆ°æ›´å¤šçš„è¿è¡Œå·¥å‚çš„ç”Ÿäº§çº¿.";
 		close; 
 	}
-	mes "¡û¡õ¡ñ ¢² ¢²¢¤¡Ğ ¢² ¡ü¡ñ¡õ";
-	mes "¡ş¡ó¡ö ¢²";
-	mes "¡ö¡÷¡û ¡ú ¡÷¡Ğ¢³ ¢³";
+	mes "â†â–¡â— â’‰ â’‰â…³âŒ’ â’‰ â†‘â—â–¡";
+	mes "ã€“â—‡â–  â’‰";
+	mes "â– â–³â† â†’ â–³âŒ’â’Š â’Š";
 	close;
 }
 
-dic_in01,42,250,5	script	Guide#diel_1	489,{
+dic_in01,42,250,5	script	å‘å¯¼#diel_1	489,{
 	if (isequipped(2782)) {
 		if (ep13_3_invite > 5) {		
-			mes "[Guide]";
-			mes "I'm Dior, your kind guide for El Dicastes.";
-			mes "How can I help you?";
+			mes "[å‘å¯¼]";
+			mes "æˆ‘æ˜¯è¿ªå¥¥,åŸƒè¿ªæ–¯ç‰¹æ–¯çš„å‘å¯¼.";
+			mes "éœ€è¦å¸®å¿™å—?";
 			next;
-			mes "[Guide]";
-			mes "You may submit your civil complaints here.";
-			mes "Civil services and El Dicastes zones are managed in the Situation Room upstairs.";
+			mes "[å‘å¯¼]";
+			mes "æ‚¨å¯ä»¥åœ¨è¿™é‡Œæäº¤æ‚¨çš„æŠ•è¯‰.";
+			mes "æ˜¯å…¬åŠ¡å‘˜åˆ¶åº¦å’ŒåŸƒè¿ªæ–¯ç‰¹æ–¯åœ¨æƒ…æŠ¥å®¤æ¥¼ä¸Šç®¡ç†.";
 			next;
-			mes "[Guide]";
-			mes "The Administrative Office is located on the top floor and handles very important matters.";
-			mes "The Archive Room is in the lower level where you can obtain a vast amount of information.";
+			mes "[å‘å¯¼]";
+			mes "è¡Œæ”¿åŠå…¬å®¤ä½äºé¡¶æ¥¼,å¹¶å¤„ç†éå¸¸é‡è¦çš„äº‹æƒ….";
+			mes "æ¡£æ¡ˆå®¤æ˜¯åœ¨è¾ƒä½çš„æ¥¼å±‚,ä½ å¯ä»¥å¾—åˆ°çš„å¤§é‡ä¿¡æ¯.";
 			next;
-			mes "[Guide]";
-			mes "By the way, you may use the elevator in the back to go to the other floors.";
+			mes "[å‘å¯¼]";
+			mes "é¡ºä¾¿è¯´ä¸€å¥,ä½ å¯ä»¥ä½¿ç”¨åœ¨åé¢çš„ç”µæ¢¯å»å…¶å®ƒæ¥¼å±‚.";
 			next;
-			mes "[Guide]";
-			mes "Oh, you didn't ask?";
-			mes "But since I'm Dior, the kind guide. He he.";
+			mes "[å‘å¯¼]";
+			mes "å™¢, ä½ æ²¡æœ‰é—®é¢˜?";
+			mes "ä½†å› ä¸ºæˆ‘æ˜¯è¿ªå¥¥,è¿™ä½å¥½å¿ƒçš„å‘å¯¼.";
 			close; 
 		}
-		mes "- The guide looks at you with an alert expression. -";
+		mes "- å‘å¯¼è­¦æƒ•çš„çœ‹ç€ä½ . -";
 		close;
 	}
-	mes "[¢³¡ñ]";
-	mes "¡õ¢£¡ó ¡Ğ ¡õ¡ñ¡ò ¢¤ ¡ø¡ø¢£ ¢± ¢²¢³¡÷ ¢±";
-	mes "¡ö¡ò¡ğ ¡ó ¡ô¡ô?";
+	mes "[â’Šâ—]";
+	mes "â–¡â…²â—‡ âŒ’ â–¡â—â— â…³ â–²â–²â…² â’ˆ â’‰â’Šâ–³ â’ˆ";
+	mes "â– â—â—‹ â—‡ â—†â—†?";
 	next;
-	mes "[¢³¡ñ]";
-	mes "¡Ğ¡ù¡ó ¡ù ¡ü¢²¡Ğ ¢± ¡÷¡ö¡ş";
-	mes "¡ñ¡ş¢² ¡ø ¡ó¡ï¡ï ¡ù ¡ğ¡ñ¡Ğ ¡ù ¢³¡ò¡ş ¡ù ¡ø¡ğ¡õ ¡õ ¢¤";
+	mes "[â’Šâ—]";
+	mes "âŒ’â€»â—‡ â€» â†‘â’‰âŒ’ â’ˆ â–³â– ã€“";
+	mes "â—ã€“â’‰ â–² â—‡â˜…â˜… â€» â—‹â—âŒ’ â€» â’Šâ—ã€“ â€» â–²â—‹â–¡ â–¡ â…³";
 	next;
-	mes "[¢³¡ñ]";
-	mes "¡û¡ù¡ô ¡ø ¡ğ¡ş¡÷ ¢³ ¡ş¡ù¡ñ ¡ú ¡ü¢¤¡ò ¡ú ¡ô¢£";
-	mes "¡÷¡ò¢¤ ¡ø ¡û¢³";
+	mes "[â’Šâ—]";
+	mes "â†â€»â—† â–² â—‹ã€“â–³ â’Š ã€“â€»â— â†’ â†‘â…³â— â†’ â—†â…²";
+	mes "â–³â—â…³ â–² â†â’Š";
 	next;
-	mes "[¢³¡ñ]";
-	mes "¡ô¡ğ¡ñ ¢¤ ¡ó¡÷¢³ ¡ş ¡ó¡õ¡÷ ¡ö ¡ó ¡ö";
+	mes "[â’Šâ—]";
+	mes "â—†â—‹â— â…³ â—‡â–³â’Š ã€“ â—‡â–¡â–³ â–  â—‡ â– ";
 	next;
-	mes "[¢³¡ñ]";
-	mes "¡ò¡ô¡ø ¡÷ ¡õ¡ø¡ğ ¡ó ¢¤¡Ğ¡ô ¡ø ¡ñ¡ñ¡ñ ¡ø ¡ú¡ö¡ø ¡ü";
-	mes "¡ï¢³¡ğ ¢¤ ¡ğ¡ö¢£ ¢± ¡ô¡ø";
+	mes "[â’Šâ—]";
+	mes "â—â—†â–² â–³ â–¡â–²â—‹ â—‡ â…³âŒ’â—† â–² â—â—â— â–² â†’â– â–² â†‘";
+	mes "â˜…â’Šâ—‹ â…³ â—‹â– â…² â’ˆ â—†â–²";
 	close;
 }
 
-dic_in01,335,34,5	script	Talkative Piom#a	490,{
-	mes "[Talkative Piom]";
+dic_in01,335,34,5	script	å¥è°ˆçš„çš®å¥¥å§†#a	490,{
+	mes "[å¥è°ˆçš„çš®å¥¥å§†]";
 	if (isequipped(2782)) {	
-		mes "At my factory";
-		mes "we not only refine Bradium,";
-		mes "but we also produce various";
-		mes "tools for daily use.";
-		mes "We manufacture war supplies";
-		mes "here too.";
+		mes "åœ¨æˆ‘çš„å·¥å‚";
+		mes "æˆ‘ä»¬ä¸ä»…ç²¾ç‚¼é­”åŠ›ä¹‹çŸ³,";
+		mes "æˆ‘ä»¬ä¹Ÿç”Ÿäº§å„ç§";
+		mes "æ—¥å¸¸ä½¿ç”¨çš„å·¥å…·.";
+		mes "æˆ‘ä»¬ä¹ŸåŒæ ·åˆ¶é€ æˆ˜äº‰ç”¨å“";
+		mes "æˆ˜äº‰ç”¨å“.";
 		close; 
 	}
-	mes "¡ü¡ù¢± ¢³";
-	mes "¡÷¡ø¡ï ¡ş ¡ó¡ó";
-	mes "¡ñ¡õ¡ò ¡ó ¡÷¡ü¡ù ¡ö";
-	mes "¡ñ¡ø¡ü ¡ú ¡ô";
-	mes "¡ş¡ú¡ò ¢± ¡û¡ò¡ò ¡ù ¡÷";
-	mes "¢³¡ò¡ò ¡ù ¢±¢£¡ò";
+	mes "â†‘â€»â’ˆ â’Š";
+	mes "â–³â–²â˜… ã€“ â—‡â—‡";
+	mes "â—â–¡â— â—‡ â–³â†‘â€» â– ";
+	mes "â—â–²â†‘ â†’ â—†";
+	mes "ã€“â†’â— â’ˆ â†â—â— â€» â–³";
+	mes "â’Šâ—â— â€» â’ˆâ…²â—";
 	close;
 }
 
-dic_in01,387,30,1	script	Manuk Piom#a	454,{
-	mes "[Manuk Piom]";
+dic_in01,387,30,1	script	é©¬åŠªå…‹çš®å¥¥å§†#a	454,{
+	mes "[é©¬åŠªå…‹çš®å¥¥å§†]";
 	if (isequipped(2782)) {
-		mes "You! We met in Manuk, didn't we?";
-		mes "I've come to pick up the weapon I ordered.";
+		mes "ä½ ! æˆ‘ä»¬åœ¨é©¬åŠªå…‹è§è¿‡, æ˜¯ä¸æ˜¯?";
+		mes "æˆ‘æ˜¯æ¥æ¥æˆ‘ä¸‹ä»¤æ­¦å™¨.";
 		close; 
 	}
-	mes "¡ü¡ó¡ş ¡ó ¡ï¡ğ¢¤ ¡ü ¡ğ¢±";
-	mes "¡ù¡ô¡ï ¡ú ¡ñ¡ù¢³ ¡ó ¡ò¡ö¡ó ¡ô¡ô";
+	mes "â†‘â—‡ã€“ â—‡ â˜…â—‹â…³ â†‘ â—‹â’ˆ";
+	mes "â€»â—†â˜… â†’ â—â€»â’Š â—‡ â—â– â—‡ â—†â—†";
 	close;
 }
 
-dicastes01,282,210,4	script	Free Knit#a	453,{
-	mes "[Free Knit]";
+dicastes01,282,210,4	script	å…è´¹ç¼–ç»‡ç‰©#a	453,{
+	mes "[å…è´¹ç¼–ç»‡ç‰©]";
 	if (isequipped(2782)) {
-		mes "As long as we have a steady";
-		mes "supply of Bradium";
-		mes "Saphas can live forever.";
-		mes "Our childhood lasts 10 years,";
-		mes "which is short.";
+		mes "åªè¦æˆ‘ä»¬æœ‰ä¸€ä¸ªç¨³å®šçš„";
+		mes "é­”åŠ›ä¹‹çŸ³ä¾›ç»™";
+		mes "æ²™å¸•äººå¯ä»¥é•¿ç”Ÿä¸è€.";
+		mes "æˆ‘ä»¬çš„ç«¥å¹´ä¿æŒ10å¹´,";
+		mes "è¿™å¤ªçŸ­äº†.";
 		close; 
 	}
-	mes "¡ñ¡ş¡ğ ¡ó ¡ü¡ò¡ö ¡÷";
-	mes "¢³¡ğ¡ï ¢£ ¡ù¡ô¡ò ¡ô ¡ó¡ş¡ñ ¢² ¡ñ¡û¢£ ¢²";
-	mes "¡ô¡ó¡ğ ¡ş ¢£¡ğ¢¤ ¡õ ¡û¢³¡ü";
-	mes "¡ó¢³¡ò ¢± ¡ô¢£¢² ¡÷ ¡÷¡ñ";
-	mes "¡ò¢²¡ï ¢£ ¡ö¡ö";
+	mes "â—ã€“â—‹ â—‡ â†‘â—â–  â–³";
+	mes "â’Šâ—‹â˜… â…² â€»â—†â— â—† â—‡ã€“â— â’‰ â—â†â…² â’‰";
+	mes "â—†â—‡â—‹ ã€“ â…²â—‹â…³ â–¡ â†â’Šâ†‘";
+	mes "â—‡â’Šâ— â’ˆ â—†â…²â’‰ â–³ â–³â—";
+	mes "â—â’‰â˜… â…² â– â– ";
 	close;
 }
 
-dicastes01,246,210,3	script	Free Venknick#a	449,{
-	mes "[Free Venknick]";
+dicastes01,246,210,3	script	è‡ªç”±çš„å‡¡å®¢å°¼å…‹#a	449,{
+	mes "[è‡ªç”±çš„å‡¡å®¢å°¼å…‹]";
 	if (isequipped(2782)) {
-		mes "At least we have plenty of Bradium.";
-		mes "Look,";
-		mes "You can see Bradium";
-		mes "everywhere you go.";
+		mes "è‡³å°‘æˆ‘ä»¬æœ‰å……è¶³çš„é­”åŠ›ä¹‹çŸ³.";
+		mes "çœ‹,";
+		mes "ä½ å¯ä»¥çœ‹åˆ°é­”åŠ›ä¹‹çŸ³";
+		mes "åˆ°å¤„éƒ½æ˜¯.";
 		next;
-		mes "[Free Venknick]";
+		mes "[è‡ªç”±çš„å‡¡å®¢å°¼å…‹]";
 		mes "?";
 		next;
-		mes "[Free Venknick]";
-		mes "The thing rolling around is a gem,";
-		mes "but why are you interested in it?";
+		mes "[è‡ªç”±çš„å‡¡å®¢å°¼å…‹]";
+		mes "ä¸œè¥¿æ»šæ¥æ»šå»çš„ç‘°å®,";
+		mes "ä½†ä½ ä¸ºä»€ä¹ˆå¯¹å®ƒæ„Ÿå…´è¶£?";
 		close; 
 	}
-	mes "¡ô¡ï¢£ ¢¤ ¡÷¡õ¢± ¡ü ¡ñ¡õ";
-	mes "¡ü¢³";
-	mes "¡ö¡ù¢¤ ¢² ¡ù¡ó¡ô";
-	mes "¡ü¢£¢³ ¡ø ¡û¡ğ¡ü ¡õ";
+	mes "â—†â˜…â…² â…³ â–³â–¡â’ˆ â†‘ â—â–¡";
+	mes "â†‘â’Š";
+	mes "â– â€»â…³ â’‰ â€»â—‡â—†";
+	mes "â†‘â…²â’Š â–² â†â—‹â†‘ â–¡";
 	next;
-	mes "[Free Venknick]";
-	mes "¡ù";
+	mes "[è‡ªç”±çš„å‡¡å®¢å°¼å…‹]";
+	mes "â€»";
 	next;
-	mes "[Free Venknick]";
-	mes "¡ş¢¤¢£ ¢± ¡ó¡ò¢³ ¡ü ¡ñ¡ğ";
-	mes "¢±¡û¢£ ¡ö ¡ü¡ò¡÷ ¡û ¡õ¡ò¡÷ ¢²¢²";
+	mes "[è‡ªç”±çš„å‡¡å®¢å°¼å…‹]";
+	mes "ã€“â…³â…² â’ˆ â—‡â—â’Š â†‘ â—â—‹";
+	mes "â’ˆâ†â…² â–  â†‘â—â–³ â† â–¡â—â–³ â’‰â’‰";
 	close;
 }
 
-dicastes01,235,245,4	script	Excited Piom#a	490,{
+dicastes01,235,245,4	script	å…´å¥‹çš„çš®å¥¥å§†#a	490,{
 	if (isequipped(2782)) {
-		mes "[Excited Piom]";
-		mes "Have you seen Ahat?";
+		mes "[å…´å¥‹çš„çš®å¥¥å§†]";
+		mes "ä½ è§è¿‡è‰¾å“ˆç‰¹å—?";
 		emotion ET_DELIGHT;
-		mes "His popularity here in El Discastes is phenomenal!";
+		mes "åœ¨åŸƒè¿ªæ–¯ç‰¹æ–¯ä»–çš„å—æ¬¢è¿ç¨‹åº¦æ˜¯æƒŠäººçš„!";
 		close; 
 	}
-	mes "[Excited Piom]";
-	mes "¡ú¡ş¡ó ¢³ ¡ü¢²¡ñ ¢±";
+	mes "[å…´å¥‹çš„çš®å¥¥å§†]";
+	mes "â†’ã€“â—‡ â’Š â†‘â’‰â— â’ˆ";
 	emotion ET_DELIGHT;
-	mes "¢³¡ó¡ñ ¡õ ¡ğ¡ô¡ş ¡÷ ¡ú¡ò¡õ ¡ø ¢² ¡ø";
+	mes "â’Šâ—‡â— â–¡ â—‹â—†ã€“ â–³ â†’â—â–¡ â–² â’‰ â–²";
 	close;
 }
 
-dicastes01,284,262,3	script	Favorable Knit#a	453,{
-	mes "[Favorable Knit]";
+dicastes01,284,262,3	script	è‰¯å¥½çš„ç¼–ç»‡ç‰©#a	453,{
+	mes "[è‰¯å¥½çš„ç¼–ç»‡ç‰©]";
 	if (isequipped(2782)) {
-		mes "Unlike the Laphine, we Saphas";
-		mes "are a very close community.";
-		mes "We start by living together in common facilities after we are born.";
-		mes "That is why all Saphas are like family.";
-		mes "We never have any quarrels between classes.";
+		mes "ä¸åƒç²¾çµ, æˆ‘ä»¬æ²™å¸•";
+		mes "æ˜¯ä¸€ä¸ªéå¸¸ç´§å¯†çš„ç¤¾åŒº.";
+		mes "é€šè¿‡æˆ‘ä»¬å…±åŒç”Ÿæ´»åœ¨å…¬å…±è®¾æ–½å¼€å§‹æˆ‘ä»¬å‡ºç”Ÿå.";
+		mes "è¿™å°±æ˜¯ä¸ºä»€ä¹ˆæ‰€æœ‰æ²™å¸•äººéƒ½åƒä¸€å®¶äººä¸€æ ·.";
+		mes "æˆ‘ä»¬ä»æ¥æ²¡æœ‰é˜¶çº§ä¹‹é—´çš„ä»»ä½•äº‰åµ.";
 		close; 
 	}
-	mes "¡ô¢±¡ó ¡õ ¡ú¡÷¡Ğ ¡õ";
-	mes "¡ü¡ï¡Ğ ¡õ ¡ô¡ó¡ü ¡ó ¢³";
-	mes "¡ñ¡ô¡ü ¡ş ¢¤¡ñ¢¤ ¡ô ¡û¡ï¡ù";
-	mes "¡ú¡ö¡ô ¡ó ¢£¡ú¡ş ¡ø ¡ø¡ò";
-	mes "¢²¢³¡û ¢¤ ¡ú¡ñ¡ù ¡û ¢³¡ò¡ø ¡õ¡õ";
+	mes "â—†â’ˆâ—‡ â–¡ â†’â–³âŒ’ â–¡";
+	mes "â†‘â˜…âŒ’ â–¡ â—†â—‡â†‘ â—‡ â’Š";
+	mes "â—â—†â†‘ ã€“ â…³â—â…³ â—† â†â˜…â€»";
+	mes "â†’â– â—† â—‡ â…²â†’ã€“ â–² â–²â—";
+	mes "â’‰â’Šâ† â…³ â†’â—â€» â† â’Šâ—â–² â–¡â–¡";
 	close;
 }
 
-dicastes01,164,180,4	script	Limpy Piom#a	489,{
-	mes "[Limpy Piom]";
+dicastes01,164,180,4	script	ç˜¸è…¿çš„çš®å¥¥å§†#a	489,{
+	mes "[ç˜¸è…¿çš„çš®å¥¥å§†]";
 	if (isequipped(2782)) {
-		mes "They say there is a";
-		mes "war going on with the Splendide in Manuk.";
-		mes "I hope everything goes well.";
-		mes "I hope it doesn't come all";
-		mes "the way to the capital city here.";
+		mes "ä»–ä»¬è¯´,æœ‰ä¸€åœº";
+		mes "ä¸æ–¯æ™®è±è¿ªå¾·çš„æˆ˜äº‰åœ¨é©¬åŠªå…‹.";
+		mes "æˆ‘å¸Œæœ›ä¸€åˆ‡é¡ºåˆ©.";
+		mes "æˆ‘å¸Œæœ›å®ƒä¸";
+		mes "è¦è”“å»¶åˆ°é¦–éƒ½æ¥.";
 		emotion ET_THINK;
 		close; 
 	}
-	mes "¢²¡ô¡ş ¡ù ¡õ¡Ğ";
-	mes "¢³¡ô¡û ¡ú ¡ø";
-	mes "¢³¡ş¢¤ ¡ó ¡õ¡÷¡Ğ";
-	mes "¡ñ¡ò¡ü ¡ü ¡ù¡ş¢±";
-	mes "¢¤¡ò¡ş ¢¤ ¢£¡ñ ¢¤ ¢£¡ñ";
+	mes "â’‰â—†ã€“ â€» â–¡âŒ’";
+	mes "â’Šâ—†â† â†’ â–²";
+	mes "â’Šã€“â…³ â—‡ â–¡â–³âŒ’";
+	mes "â—â—â†‘ â†‘ â€»ã€“â’ˆ";
+	mes "â…³â—ã€“ â…³ â…²â— â…³ â…²â—";
 	emotion ET_THINK;
 	close;
 }
 
-dicastes01,191,202,4	script	Complaining Galten#fihs	450,{
+dicastes01,191,202,4	script	æŠ±æ€¨çš„åŠ å°”æ»•#fihs	450,{
 	if (isequipped(2782)) {
-		mes "[Complaining Galten]";
-		mes "That crazy Vanknick always";
-		mes "talks about the legend of that statue.";
+		mes "[æŠ±æ€¨çš„åŠ å°”æ»•]";
+		mes "é‚£ä¸ªç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹";
+		mes "æ€»æ˜¯åœ¨è°ˆè®ºè¿™é›•åƒçš„ä¼ è¯´.";
 		next;
-		mes "[Complaining Galten]";
-		mes "Have you ever talked";
-		mes "to him?";
+		mes "[æŠ±æ€¨çš„åŠ å°”æ»•]";
+		mes "ä½ æœ‰æ²¡æœ‰å’Œä»–";
+		mes "èŠè¿‡?";
 		next;
-		if(select("No:Yes") == 1) {
-			mes "[Complaining Galten]";
-			mes "Then you don't know about the legend behind the statue?";
-			mes "Then, I don't know what to talk about with you.";
+		if(select("- æ²¡æœ‰:- æœ‰çš„") == 1) {
+			mes "[æŠ±æ€¨çš„åŠ å°”æ»•]";
+			mes "ä½ ä¸çŸ¥é“é›•åƒèƒŒåçš„ä¼ å¥‡?";
+			mes "æˆ‘ä¸çŸ¥é“ä¸ä½ è°ˆä»€ä¹ˆ.";
 			close; 
 		}
-		emotion ET_KIK, getnpcid(0, "Crazy Venknick#fihsing1");
-		mes "[Complaining Galten]";
-		mes "You also fell for that crazy man.";
+		emotion ET_KIK, getnpcid(0, "ç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹#fihsing1");
+		mes "[æŠ±æ€¨çš„åŠ å°”æ»•]";
+		mes "ä½ ä¹Ÿçˆ±ä¸Šäº†é‚£ä¸ªç–¯ç‹‚çš„äºº.";
 		next;
 		mes "[" + strcharinfo(0) + "]";
-		mes "Yes";
-		emotion ET_CRY, playerattached();
+		mes "æ˜¯çš„";
+		emotion ET_CRY,1;
 		next;
-		mes "[Complaining Galten]";
-		mes "Just forget about it quickly for your own good.";
+		mes "[æŠ±æ€¨çš„åŠ å°”æ»•]";
+		mes "å¿˜æ‰å®ƒä¸ºäº†ä½ è‡ªå·±å¥½.";
 		close;
 	}
-	mes "[¡õ¢£¡ö ¡ú ]";
-	mes "¡õ¡ò¡û ¡ò ¢£¡û¡÷ ¡÷ ";
-	mes "¡û¡ù¡û ¡÷ ¡ü¡ş¡û ¢³ ¡ó";
+	mes "[â–¡â…²â–  â†’ ]";
+	mes "â–¡â—â† â— â…²â†â–³ â–³ ";
+	mes "â†â€»â† â–³ â†‘ã€“â† â’Š â—‡";
 	next;
-	mes "[¡õ¢£¡ö ¡ú ]";
-	mes "¡ğ¢±¡ü ¡û ¡õ¡÷¢¤";
-	mes "¢¤¡ş¡ø ¢² ¡÷";
+	mes "[â–¡â…²â–  â†’ ]";
+	mes "â—‹â’ˆâ†‘ â† â–¡â–³â…³";
+	mes "â…³ã€“â–² â’‰ â–³";
 	next;
-	mes "Don't know what it means.";
+	mes "ä¸çŸ¥é“æ˜¯ä»€ä¹ˆæ„æ€.";
 	close;
 }
 
-dicastes01,202,197,4	script	Crazy Venknick#fihsing1	449,{
+dicastes01,202,197,4	script	ç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹#fihsing1	449,{
 	if (isequipped(2782)) {
-		mes "[Crazy Venknick]";
-		mes "At only 5000 Zeny";
-		mes "I will tell you the sad legend behind that statue.";
+		mes "[ç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹]";
+		mes "åªè¦ 5000 Zeny";
+		mes "æˆ‘ä¼šå‘Šè¯‰ä½ ,é›•åƒèƒŒåçš„æ‚²ä¼¤ä¼ è¯´.";
 		next;
-		if(select("Give 5000 Zeny.:Don't give 5000 Zeny.") == 2) {
-			mes "[Crazy Venknick]";
-			mes "Don't come back with regrets.";
+		if(select("ç»™ä»– 5000 Zeny.:ä¸ç»™ 5000 Zeny.") == 2) {
+			mes "[ç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹]";
+			mes "ä¸å›æ¥ä¼šé—æ†¾çš„.";
 			close; 
 		}
 		if (Zeny < 5000) {
-			mes "[Crazy Venknick]";
-			mes "I have";
-			mes "no legend to share with";
-			mes "the poor.";
+			mes "[ç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹]";
+			mes "æˆ‘æœ‰";
+			mes "æ²¡æœ‰ä¼ è¯´";
+			mes "ä¸ç©·äººåˆ†äº«.";
 			close;
 			close; 
 		}
-		set Zeny, Zeny-5000;
-		mes "[Crazy Venknick]";
-		mes "Thanks.";
-		emotion ET_KIK, getnpcid(0, "Complaining Galten#fihs");
+		Zeny -= 5000;
+		mes "[ç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹]";
+		mes "è°¢è°¢.";
+		emotion ET_KIK, getnpcid(0, "æŠ±æ€¨çš„åŠ å°”æ»•#fihs");
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "What is the sad legend?";
+		mes "ä»€ä¹ˆæ˜¯æ‚²ä¼¤çš„ä¼ è¯´?";
 		next;
 		emotion ET_THINK;
 		mes "["+strcharinfo(0)+"]";
-		mes "I asked what the sad legend is about!";
+		mes "æˆ‘é—®æ‚²ä¼¤çš„ä¼ è¯´æ˜¯å…³äºä»€ä¹ˆçš„!";
 		next;
-		mes "[Crazy Venknick]";
-		mes "I don't believe in legends.";
+		mes "[ç–¯ç‹‚çš„å‡¡å®¢å°¼å…‹]";
+		mes "æˆ‘ä¸ç›¸ä¿¡ä¼ è¯´.";
 		next;
-		emotion ET_THINK, playerattached();
+		emotion ET_THINK,1;
 		mes "["+strcharinfo(0)+"]";
-		mes "Was I tricked?";
-		sc_start SC_Blind,20000,0;
+		mes "æˆ‘è¢«æ¬ºéª—äº†?";
+		sc_start SC_BLIND,20000,0;
 		next;
-		mes "You feel outraged at being tricked.";
+		mes "ä½ åœ¨è¢«æ¬ºéª—æ„Ÿåˆ°æ„¤æ€’.";
 		close; 
 	}
-	mes "[¡ö¡ú¡ù ¢³ ]";
-	mes "¢²¡û¡ó ¡ó ¡ù¢¤¡ø";
-	mes "¢¤¡ğ¢² ¢± ¡ñ¡ö¢² ¡ø ¡ï¡ö¡ü";
+	mes "[â– â†’â€» â’Š ]";
+	mes "â’‰â†â—‡ â—‡ â€»â…³â–²";
+	mes "â…³â—‹â’‰ â’ˆ â—â– â’‰ â–² â˜…â– â†‘";
 	next;
-	mes "Don't know what it means.";
+	mes "ä¸çŸ¥é“æ˜¯ä»€ä¹ˆæ„æ€.";
 	close;
 }
 
-dic_in01,98,110,5	script	Worried Piom#a	489,{
+dic_in01,98,110,5	script	æ‹…å¿ƒçš„çš®å¥¥å§†#a	489,{
 	if (isequipped(2782)) {
-		mes "[Worried Piom]";
-		mes "I haven't seen my friends for the last few hours.";
-		mes "It's about time for them to have";
-		mes "their Bradium. Hmm..";
+		mes "[æ‹…å¿ƒçš„çš®å¥¥å§†]";
+		mes "æˆ‘è¿˜æ²¡æœ‰çœ‹åˆ°æˆ‘çš„æœ‹å‹åœ¨è¿‡å»å‡ ä¸ªå°æ—¶.";
+		mes "æ˜¯å…³äºæ—¶é—´è®©ä»–ä»¬æœ‰";
+		mes "ä»–ä»¬çš„é­”åŠ›ä¹‹çŸ³. å””..";
 		close;
 	}
-	mes "[Worried Piom]";
-	mes "¡û¢±¡÷ ¢² ¡ï¡ş¡ò ¡ü ¡ï¡û¢²";
-	mes "¡ï¡÷¢¤ ¡Ğ ¡ï¡ï¡Ğ ¢¤ ¢£";
-	mes "¡÷¡ş¡ğ ¡ó ¡ñ";
+	mes "[æ‹…å¿ƒçš„çš®å¥¥å§†]";
+	mes "â†â’ˆâ–³ â’‰ â˜…ã€“â— â†‘ â˜…â†â’‰";
+	mes "â˜…â–³â…³ âŒ’ â˜…â˜…âŒ’ â…³ â…²";
+	mes "â–³ã€“â—‹ â—‡ â—";
 	close;
 }
 
-dic_in01,98,96,3	script	Lost Galten#a	492,{
+dic_in01,98,96,3	script	å¤±è½çš„åŠ å°”æ»•#a	492,{
 	if (isequipped(2782)) {
-		mes "[Lost Galten]";
-		mes "I've been living as a Piom for too long";
-		mes "now it's like a bad habit.";
-		mes "and I find myself here all the time.";
+		mes "[å¤±è½çš„åŠ å°”æ»•]";
+		mes "æˆ‘ä¸€ç›´ä»¥çš®å¥¥å§†çš„èº«ä»½ç”Ÿæ´»çš„å¤ªä¹…";
+		mes "ç°åœ¨å®ƒå°±åƒä¸€ä¸ªåä¹ æƒ¯.";
+		mes "æˆ‘å‘ç°è‡ªå·±åœ¨è¿™é‡Œæ‰€æœ‰çš„æ—¶é—´.";
 		close;
 	}
-	mes "[Lost Galten]";
-	mes "¡ó¡ô¡ï ¡û ¢³¡ú";
-	mes "¡ü¡ø¡ñ ¢£ ";
-	mes "¡ö¡ï¢² ¡û ¡ö¡ó";
+	mes "[å¤±è½çš„åŠ å°”æ»•]";
+	mes "â—‡â—†â˜… â† â’Šâ†’";
+	mes "â†‘â–²â— â…² ";
+	mes "â– â˜…â’‰ â† â– â—‡";
 	close;
 }

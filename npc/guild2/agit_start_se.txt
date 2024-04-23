@@ -1,3 +1,8 @@
+//============================================================
+//= rAthenaCN [攻城战SE]汉化脚本 
+//============================================================
+
+
 //===== rAthena Script =======================================
 //= War of Emperium SE - Auto-Start
 //===== By: ==================================================
@@ -5,7 +10,7 @@
 //===== Current Version: =====================================
 //= 1.0
 //===== Compatible With: =====================================
-//= rAthena Project; RO Episode 11.3
+//= rAthena SVN; RO Episode 11.3
 //===== Description: =========================================
 //= Auto-start for War of Emperium SE.
 //= For instructions, see doc/woe_time_explanation.txt.
@@ -16,16 +21,16 @@
 -	script	Agit2_Event	-1,{
 	end;
 
-OnClock1800:	//start time for Tuesday and Thursday
-OnClock2000:	//end time for Tuesday and Thursday
-OnClock2100:	//start time for Saturday
-OnClock2300:	//end time for Saturday
+OnClock1800:	//start time for Tues(2), Thurs(4)
+OnClock2000:	//end time for Tues(2), Thurs(4)
+OnClock2100:	//start time for Sat(6)
+OnClock2300:	//end time for Sat(6)
 
 OnAgitInit2:
 	// starting time checks
-	if((gettime(DT_DAYOFWEEK)==TUESDAY) && (gettime(DT_HOUR)>=18 && gettime(DT_HOUR)<21) ||
-	   (gettime(DT_DAYOFWEEK)==THURSDAY) && (gettime(DT_HOUR)>=18 && gettime(DT_HOUR)<21) ||
-	   (gettime(DT_DAYOFWEEK)==SATURDAY) && (gettime(DT_HOUR)>=21 && gettime(DT_HOUR)<23)) {
+	if((gettime(4)==2) && (gettime(3)>=18 && gettime(3)<21) ||
+	   (gettime(4)==4) && (gettime(3)>=18 && gettime(3)<21) ||
+	   (gettime(4)==6) && (gettime(3)>=22 && gettime(3)<23)) {
 		if (!agitcheck2()) {
 			AgitStart2;
 		}
@@ -33,9 +38,9 @@ OnAgitInit2:
 	}
 
 	// end time checks
-	if ((gettime(DT_DAYOFWEEK)==TUESDAY) && (gettime(DT_HOUR)==21) ||
-	    (gettime(DT_DAYOFWEEK)==THURSDAY) && (gettime(DT_HOUR)==21) ||
-	    (gettime(DT_DAYOFWEEK)==SATURDAY) && (gettime(DT_HOUR)==23)) { 
+	if ((gettime(4)==2) && (gettime(3)==21) ||
+	    (gettime(4)==4) && (gettime(3)==21) ||
+	    (gettime(4)==6) && (gettime(3)==23)) { 
 		if (agitcheck2()) {
 			AgitEnd2;
 		}

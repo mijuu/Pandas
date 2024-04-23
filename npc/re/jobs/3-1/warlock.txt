@@ -760,8 +760,7 @@ job3_war01,29,25,0	script	Ebein#WRR	437,{
 job3_war01,29,25,5	script	The chamber of magic#1	437,{
 	end;
 OnInit:
-	//disablenpc  "The chamber of magic#1";
-	hideonnpc "The chamber of magic#1";
+	disablenpc "The chamber of magic#1";
 	waitingroom "The chamber of magic",20,"The chamber of magic#1::OnStartArena",1;
 	enablewaitingroomevent;
 	end;
@@ -801,10 +800,10 @@ OnDisable:
 
 -	script	The chamber of magic#2	-1,{
 OnInit:
-	disablenpc();
+	disablenpc strnpcinfo(0);
 	end;
 OnEnable:
-	enablenpc();
+	enablenpc strnpcinfo(0);
 	monster "job3_war02",23,32,"Magic Monster",2047,1,strnpcinfo(0)+"::OnMyMobDead";
 	monster "job3_war02",23,21,"Magic Monster",2048,1,strnpcinfo(0)+"::OnMyMobDead";
 	monster "job3_war02",34,32,"Magic Monster",2049,1,strnpcinfo(0)+"::OnMyMobDead";
@@ -819,7 +818,7 @@ OnReset:
 	killmonster "job3_war02",strnpcinfo(0)+"::OnMyMobDead";
 	end;
 OnDisable:
-	disablenpc();
+	disablenpc strnpcinfo(0);
 	end;
 OnMyMobDead:
 	if (mobcount("job3_war02",strnpcinfo(0)+"::OnMyMobDead") < 1) {

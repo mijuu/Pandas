@@ -65,25 +65,25 @@ prontera,146,92,4	script	Twin Towers#tt1::Twin-Towers	812,{
 	menu "Hidden Temple", HiddenTemple,"Orc Dungeon",OrcDungeon,"Ant Hell",AntHell,"Mjolnir Waste Pit",MjolnirWastePit,"Sphinx",Sphinx,"Glast Heim",GlastHeim,"Comodo",Comodo;
 		HiddenTemple:
 			warp "prt_fild01",136,368;
-			end;
+			close;
 		OrcDungeon:
 			warp "gef_fild10",67,334;
-			end;
+			close;
 		AntHell:
 			warp "moc_fild04",210,329;
-			end;
+			close;
 		MjolnirWastePit:
 			warp "mjolnir_02",79,361;
-			end;
+			close;
 		Sphinx:
 			warp "moc_fild19",105,99;
-			end;
+			close;
 		GlastHeim:
 			warp "gef_fild06",45,304;
-			end;
+			close;
 		Comodo:
 			warp "cmd_fild01",30,317;
-			end;
+			close;
 }
 
 morocc,160,97,4	duplicate(Twin-Towers)	Twin Towers#tt2	812
